@@ -5,6 +5,9 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
+    """
+    FIFOCache- frist in frist out
+    """
     def __init__(self):
         """ The constructor of the class
         """

@@ -15,5 +15,3 @@ jobs:
           pip install pycodestyle
       - name: Run tests
         run: ./Check.sh
-      - name: Python Style Checker
-        uses: andymckay/pycodestyle-action@0.1.3
