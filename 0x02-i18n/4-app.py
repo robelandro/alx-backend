@@ -15,7 +15,7 @@ class Config(object):
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
-    
+
 
 app.config.from_object(Config)
 
@@ -27,6 +27,7 @@ def get_locale():
     if locale and locale in app.config['LANGUAGES']:
         return locale
     return request.accept_languages.best_match(app.config['LANGUAGES'])
+
 
 @app.route('/')
 def root_path():
