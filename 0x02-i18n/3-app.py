@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module for 2. Get locale from request task.
+Module for 3. Parametrize templates task.
 """
 
 from flask import Flask, render_template, request
@@ -15,7 +15,7 @@ class Config(object):
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
-
+    
 
 app.config.from_object(Config)
 
@@ -29,7 +29,7 @@ def get_locale():
 @app.route('/')
 def root_path():
     """Method for root route."""
-    return render_template("2-index.html")
+    return render_template("3-index.html")
 
 
 if __name__ == "__main__":
