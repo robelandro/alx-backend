@@ -30,3 +30,7 @@ def get_locale():
 def root_path():
     """Method for root route."""
     return render_template("2-index.html")
+
+
+if __name__ == "__main__":
+    app.run(port=5000)
